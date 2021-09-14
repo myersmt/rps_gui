@@ -4,7 +4,7 @@ Matt Myers
 GUI Rock Paper Scissors
 The rock paper scissors game is an age old tradition
 on who gets to do something first.
-testing commit
+testing commits
 '''
 # Libraries
 import PySimpleGUI as sg
