@@ -2,7 +2,8 @@
 Matt Myers
 09/14/2021
 GUI Rock Paper Scissors
-test testing 12345
+The rock paper scissors game is an age old tradition
+on who gets to do something first
 '''
 # Libraries
 import PySimpleGUI as sg
