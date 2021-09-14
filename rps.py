@@ -5,9 +5,6 @@ GUI Rock Paper Scissors
 The rock paper scissors game is an age old tradition
 on who gets to do something first.
 
-This is a test for doing things on my laptop
-and then viewing them on my computer
-
 This is a test for doing things on computer
 and then viewing them on my laptop
 '''
