@@ -2,7 +2,7 @@
 Matt Myers
 09/14/2021
 GUI Rock Paper Scissors
-test edit
+test
 '''
 # Libraries
 import PySimpleGUI as sg
