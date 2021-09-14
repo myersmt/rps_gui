@@ -1,2 +1,2 @@
-this is a test message
-lets try adding some more
+This a message written into this file
+to test if this actually works
