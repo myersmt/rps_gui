@@ -4,9 +4,6 @@ Matt Myers
 GUI Rock Paper Scissors
 The rock paper scissors game is an age old tradition
 on who gets to do something first.
-
-This is a test for doing things on computer
-and then viewing them on my laptop
 '''
 # Libraries
 import PySimpleGUI as sg
