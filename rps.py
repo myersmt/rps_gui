@@ -17,21 +17,19 @@ sg.theme('Dark Teal 2')
 # Setup
 uwin=cwin=0
 
-
-#comp = random.choice(['Rock','Paper','Scissors'])
-#result_info = results('Scissors',comp)
-#print(result_info)
-
-
 # *Window.Contents
-layout = [[sg.Text("\nRock, Paper, or Scissors?\n\nChoose Wisely!\n")],
+font_header=('helvetica', 12, 'bold',)
+font_sub=('helvetica',8)
+layout = [[sg.Text("\nRock, Paper, or Scissors?",font=font_header)],
+          [sg.Text("Choose Wisely!\n",font=font_sub)],
           [sg.Button('Rock'), sg.Button('Paper'), sg.Button('Scissors')],
           [sg.Output(size=(30,4), key='-o-')],
-          [sg.Text(size=(30,2), key='wins', justification='r')],
+          [sg.Text('Player: {}\nComputer: {}'.format(uwin,cwin),size=(30,2), key='wins', justification='r')],
           [sg.Button('Quit')]]
 
 # *Window.Create
-window = sg.Window('Rock_Paper_Scissors', layout, size=(225,275))
+window = sg.Window('Rock_Paper_Scissors', layout, size=(230,300),
+                   element_justification='c')
 
 # *Window.Display
 while True:
