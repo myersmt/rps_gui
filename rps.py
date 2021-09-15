@@ -9,11 +9,19 @@ on who gets to do something first.
 import PySimpleGUI as sg
 from rps_func import results
 import random
-
-#Functions
+import time as t
 
 #GUI
 sg.theme('Dark Teal 2')
+
+# Setup
+uwin=cwin=0
+
+
+#comp = random.choice(['Rock','Paper','Scissors'])
+#result_info = results('Scissors',comp)
+#print(result_info)
+
 
 # *Window.Contents
 layout = [[sg.Text("\nRock, Paper, or Scissors?\n\nChoose Wisely!\n")],
@@ -28,21 +36,23 @@ window = sg.Window('Rock_Paper_Scissors', layout, size=(225,275))
 # *Window.Display
 while True:
     event, values = window.read()
-    comp = random.choice(['Rock','Paper','Scissors'])
     if event == sg.WINDOW_CLOSED or event == 'Quit':
         break
+
+    comp = random.choice(['Rock','Paper','Scissors'])
+    result_info = results(event,comp)
+    result = result_info[0]
+    uwin += result_info[1]
+    cwin += result_info[2]
     
-    result,uwin,cwin = results(event,comp)
     
-    window['-o-'].update('You choose: ' + event +
-                              '\nComputer choose: ' + comp +
-                              '\n\n' + result) 
-    window['wins'].update('Player: '+ comp + '\nComputer: ' + event)
+    window['-o-'].update('You choose: ' + event +'\nComputer choose: ' + comp + '\n\n' + result) 
+    window['wins'].update('Player: {}\nComputer: {}'.format(uwin,cwin))
+    
 
 # *Window.Close
 window.close()
 
-#Backend
 
 
 
