@@ -5,9 +5,10 @@ This is the functions for
 the rps game 
 '''
 def results(uc, cc):
+    u,c=0
     if uc == cc:
         message = 'It\'s a tie, I would try again'
-        return message
+        return message,u,c
     elif uc == 'Rock':
         if cc == 'Scissors':
             message = 'You\'ve won, Congratulations!'
