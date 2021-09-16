@@ -9,7 +9,6 @@ on who gets to do something first.
 import PySimpleGUI as sg
 from rps_func import results
 import random
-import time as t
 
 #GUI
 sg.theme('Dark Teal 2')
