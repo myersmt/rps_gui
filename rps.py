@@ -28,7 +28,8 @@ layout = [[sg.Text("\nRock, Paper, or Scissors?",font=font_header)],
 
 # *Window.Create
 window = sg.Window('Rock_Paper_Scissors', layout, size=(230,300),
-                   element_justification='c')
+                   element_justification='c', no_titlebar=True,
+                   grab_anywhere=True)
 
 # *Window.Display
 while True:
